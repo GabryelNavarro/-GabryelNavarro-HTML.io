@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursinho Web -Contato</title>
+    <link rel="shortcut icon" href="livros.png" type="image/x-icon">
+</head>
+<body>
+    <p><a href="Aula.html">Página Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas </a> <a href="pg3.html"> | Entre em contato</a></p>
+    <h1>Dados para contato:</h1>
+    <form action="Contato" method="POST">
+        <label for="idname">Nome Completo:</label>
+        <br>
+        <input type="text" name="Nome" id="idname" placeholder="Nome Completo">
+        <br>
+        <label for="idemail">E-mail:</label>
+        <br>
+        <input type="text" name="e-mail" id="idemail" placeholder="Exemplo@">
+        <br>
+        <br>
+        <label for="idcurso"> Qual Disciplina que mais interessa ? </label>
+        <br>
+        <select name="cursos" id="idcurso">
+            <option>Desenvolvimento Web </option>
+            <option>Programação Orientada a Objetos</option>
+            <option>Banco de Dados</option>
+        
+        </select>
+        <fieldset>
+            <legend> Quais linguagens você conhece?</legend>
+            <input type="checkbox" name="linguagem" id="idlingua">
+            <label for="idlingua">C#</label>
+            <br>
+            <input type="checkbox" name="linguagens" id="idlingua2">
+            <label for="idlingua2">Java</label>
+            <br>
+            <input type="checkbox" name="linguagens" id="lingua3">
+            <label for="lingua3">JavaScript</label>
+            <br>
+            <input type="checkbox" name="linguagens" id="lingua4">
+            <label for="lingua4">Python</label>
+            <br>
+            <input type="checkbox" name="linguagens" id="lingua5">
+            <label for="lingua5">PHP</label>
+            <br>
+            <input type="checkbox" name="linguagens" id="ligua6">
+            <label for="lingua6">Ruby</label>
+        </fieldset>
+        <br>
+       <fieldset>
+        <p>Onde conheceu o Cursinho Web</p>
+        <input type="radio" name="onde" id="radio1">
+        <label for="onde">Amigos</label>
+        <br>
+        <input type="radio" name="onde" id="radio2">
+        <label for="onde">Google</label>
+        <br>
+        <input type="radio" name="onde" id="radio3">
+        <label for="onde">Youtube</label>
+        <br>
+        <input type="radio" name="onde" id="radio4">
+        <label for="onde">Instagram</label>
+        <br>
+        <br>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+       </fieldset>
+    </form>
+    
+
+    
+    
+   
+
+
+
+  
+</body>
+</html>
