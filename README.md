@@ -1,5 +1,7 @@
 # HTML
 Site em Desenvolvimento(Apenas para treino).
-Site 1.0
+Site 1.1
 
-https://gabryelnavarro.github.io/GabryelNavarro-HTML.io/
+https://gabryelnavarro.github.io/GabryelNavarro-HTML.io/index.html
+
+
