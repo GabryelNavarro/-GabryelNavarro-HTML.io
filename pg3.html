@@ -14,15 +14,20 @@
             background-color: black;
         }
         main{
-            text-align:start;
-            background-color: antiquewhite;
-            max-width: 1450px;
-            height: 1450px;
-            margin: auto;
+            text-align:left;
+            background-color: rgba(255, 255, 255, 0);
+            max-width: 1650px;
+            height: 570px;
+           margin:auto;
         }
         div#principal{
-            background-color: rgba(153, 147, 147, 0.692);
-            background-image: linear-gradient(to right,rgba (0, 0, 0, 0.651),rgba(207, 202, 202, 0.247));
+            background-color: rgba(236, 236, 236, 0.534);
+            background-image:linear-gradient(to right,rgba(179, 173, 173, 0.651),rgba(15, 15, 15, 0.247));
+            height: 570px;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -33,46 +38,56 @@
                 <p><a href="index.html">Página Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas </a> <a href="pg3.html"> | Entre em contato</a></p>
                 <h1>Dados para contato:</h1>
                 <form action="Contato" method="POST">
-                    <label for="idname">Nome Completo:</label>
+                    <strong><label for="idname">Nome Completo:</label></strong>
                     <br>
                     <input type="text" name="Nome" id="idname" placeholder="Nome Completo">
                     <br>
-                    <label for="idemail">E-mail:</label>
+                    <strong><label for="idemail">E-mail:</label></strong>
                     <br>
                     <input type="text" name="e-mail" id="idemail" placeholder="Exemplo@">
                     <br>
                     <br>
-                    <label for="idcurso"> Qual Disciplina que mais interessa ? </label>
+                    <strong><label for="idcurso"> Qual Disciplina que mais interessa ? </label></strong>
                     <br>
                     <select name="cursos" id="idcurso">
+                        <option>Escolha uma opção</option>
                         <option>Desenvolvimento Web </option>
                         <option>Programação Orientada a Objetos</option>
                         <option>Banco de Dados</option>
+                        <br>
             
                     </select>
                     <fieldset>
-                        <legend> Quais linguagens você conhece?</legend>
-                        <input type="checkbox" name="linguagem" id="idlingua">
-                        <label for="idlingua">C#</label>
-                        <br>
-                        <input type="checkbox" name="linguagens" id="idlingua2">
-                        <label for="idlingua2">Java</label>
-                        <br>
-                        <input type="checkbox" name="linguagens" id="lingua3">
-                        <label for="lingua3">JavaScript</label>
-                        <br>
-                        <input type="checkbox" name="linguagens" id="lingua4">
-                        <label for="lingua4">Python</label>
-                        <br>
-                        <input type="checkbox" name="linguagens" id="lingua5">
-                        <label for="lingua5">PHP</label>
-                        <br>
-                        <input type="checkbox" name="linguagens" id="ligua6">
-                        <label for="lingua6">Ruby</label>
+                        <strong>
+                            <legend>Quais linguagens você conhece?</legend>
+                        </strong>
+                        
+                            <input type="checkbox" name="linguagem" id="idlingua">
+                            <label for="idlingua">C#</label>
+                            <br>
+                            <input type="checkbox" name="linguagens" id="idlingua2">
+                            <label for="idlingua2">Java</label>
+                            <br>
+                            <input type="checkbox" name="linguagens" id="lingua3">
+                            <label for="lingua3">JavaScript</label>
+                            <br>
+                            <input type="checkbox" name="linguagens" id="lingua4">
+                            <label for="lingua4">Python</label>
+                            <br>
+                            <input type="checkbox" name="linguagens" id="lingua5">
+                            <label for="lingua5">PHP</label>
+                            <br>
+                            <input type="checkbox" name="linguagens" id="ligua6">
+                            <label for="lingua6">Ruby</label>
+                    
                     </fieldset>
                     <br>
+                    
                     <fieldset>
-                        <legend>Onde conheceu o Cursinho Web</legend>
+                        
+                        <strong>
+                            <legend>Onde conheceu o Cursinho Web</legend>
+                        </strong>
                         <input type="radio" name="onde" id="radio1">
                         <label for="onde">Amigos</label>
                         <br>
@@ -90,17 +105,11 @@
                     <br>
                     <input type="reset" value="Limpar">
                     <input type="submit" value="Enviar">
-            </div>
-        </main>
-        </form>
-    
-
-    
-    
-   
-
-
-
-  
-</body>
-</html>
+                    
+                    
+                </main>
+            </form>
+            
+                
+        </body>
+        </html>
