@@ -28,7 +28,9 @@
         }
         a{
             text-decoration: none;
-            color: rgb(42, 0, 231);
+            color: blue;
+            
+
             
         }
     </style>
@@ -36,14 +38,16 @@
 <body>
 <main>
     <div id="principal">
-        <p><a href="index.html">Pagina Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas</a><a href="pg3.html"> | Entre em contato</a></p>
-        <h1> Bem - Vindo ao Cursinho Web!</h1>
+        <strong>
+            <p><a href="index.html">Pagina Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas</a><a href="pg3.html"> | Entre em contato</a></p>
+        </strong>
+        <h1 id="inicio"> Bem - Vindo ao Cursinho Web!</h1>
         <p> Nossa empresa oferece cursos de aprofundamento em Programação.</p>
         <img src="empresa.jpg" alt="" id="img1">
-        <p> Cursinho Web - Todos os direitos reservados
-            <br>
-            Contato : <a href="email@provedor.com">email@provedor.com</a>
-        </p>
+        <strong id="fimpg1">Cursinho web - Todos os direitos reservados</strong>
+        <br>
+        <strong id="fimpg1">Contato:</strong> <a href="email@provedor.com"><strong>email@provedor.com</strong></a>
+        
     </div>
 </main>
 <style>
@@ -52,6 +56,13 @@
         width: 950px;
         filter: drop-shadow(0px 0px 5px black);
     }
+    #inicio{
+        filter: drop-shadow(2px 0 1px black);
+    }
+   #fimpg1{
+    filter: drop-shadow(0px 0px 2px black);
+   }
+    
 </style>
 </body>
 </html>

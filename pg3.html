@@ -38,50 +38,56 @@
 
         <main>
             <div id="principal">
-                <p><a href="index.html">Página Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas </a> <a href="pg3.html"> | Entre em contato</a></p>
-                <h1>Dados para contato:</h1>
+                <strong>
+                    <p><a href="index.html">Página Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas </a> <a href="pg3.html"> | Entre em contato</a></p>
+                </strong>
+                <h1 id="contato">Dados para contato:</h1>
                 <form action="Contato" method="POST">
-                    <strong><label for="idname">Nome Completo:</label></strong>
+                    <strong id="dados"><label for="idname">Nome Completo:</label></strong>
                     <br>
                     <input type="text" name="Nome" id="idname" placeholder="Nome Completo">
                     <br>
-                    <strong><label for="idemail">E-mail:</label></strong>
+                    <strong id="dados"><label for="idemail">E-mail:</label></strong>
                     <br>
-                    <input type="text" name="e-mail" id="idemail" placeholder="Exemplo@">
+                    <strong><input type="text" name="e-mail" id="idemail" placeholder="Exemplo@"></strong>
                     <br>
                     <br>
-                    <strong><label for="idcurso"> Qual Disciplina que mais interessa ? </label></strong>
+                    <strong id="dados"><label for="idcurso"> Qual Disciplina que mais interessa ? </label></strong>
                     <br>
                     <select name="cursos" id="idcurso">
-                        <option>Escolha uma opção</option>
-                        <option>Desenvolvimento Web </option>
-                        <option>Programação Orientada a Objetos</option>
-                        <option>Banco de Dados</option>
+                        <stong>
+                            <option>Escolha uma opção</option>
+                            <option>Desenvolvimento Web </option>
+                            <option>Programação Orientada a Objetos</option>
+                            <option>Banco de Dados</option>
+                        </stong>
                         <br>
             
                     </select>
                     <fieldset>
                         <strong>
-                            <legend>Quais linguagens você conhece?</legend>
+                            <legend id="dados">Quais linguagens você conhece?</legend>
                         </strong>
                         
-                            <input type="checkbox" name="linguagem" id="idlingua">
-                            <label for="idlingua">C#</label>
-                            <br>
-                            <input type="checkbox" name="linguagens" id="idlingua2">
-                            <label for="idlingua2">Java</label>
-                            <br>
-                            <input type="checkbox" name="linguagens" id="lingua3">
-                            <label for="lingua3">JavaScript</label>
-                            <br>
-                            <input type="checkbox" name="linguagens" id="lingua4">
-                            <label for="lingua4">Python</label>
-                            <br>
-                            <input type="checkbox" name="linguagens" id="lingua5">
-                            <label for="lingua5">PHP</label>
-                            <br>
-                            <input type="checkbox" name="linguagens" id="ligua6">
-                            <label for="lingua6">Ruby</label>
+                            <strong>
+                                <input type="checkbox" name="linguagem" id="idlingua">
+                                <label for="idlingua">C#</label>
+                                <br>
+                                <input type="checkbox" name="linguagens" id="idlingua2">
+                                <label for="idlingua2">Java</label>
+                                <br>
+                                <input type="checkbox" name="linguagens" id="lingua3">
+                                <label for="lingua3">JavaScript</label>
+                                <br>
+                                <input type="checkbox" name="linguagens" id="lingua4">
+                                <label for="lingua4">Python</label>
+                                <br>
+                                <input type="checkbox" name="linguagens" id="lingua5">
+                                <label for="lingua5">PHP</label>
+                                <br>
+                                <input type="checkbox" name="linguagens" id="ligua6">
+                                <label for="lingua6">Ruby</label>
+                            </strong>
                     
                     </fieldset>
                     <br>
@@ -89,30 +95,44 @@
                     <fieldset>
                         
                         <strong>
-                            <legend>Onde conheceu o Cursinho Web</legend>
+                            <legend id="dados">Onde conheceu o Cursinho Web</legend>
                         </strong>
                         <input type="radio" name="onde" id="radio1">
-                        <label for="onde">Amigos</label>
-                        <br>
-                        <input type="radio" name="onde" id="radio2">
-                        <label for="onde">Google</label>
-                        <br>
-                        <input type="radio" name="onde" id="radio3">
-                        <label for="onde">Youtube</label>
-                        <br>
-                        <input type="radio" name="onde" id="radio4">
-                        <label for="onde">Instagram</label>
+                        <strong>
+                            <label for="onde">Amigos</label>
+                            <br>
+                            <input type="radio" name="onde" id="radio2">
+                            <label for="onde">Google</label>
+                            <br>
+                            <input type="radio" name="onde" id="radio3">
+                            <label for="onde">Youtube</label>
+                            <br>
+                            <input type="radio" name="onde" id="radio4">
+                            <label for="onde">Instagram</label>
+                        </strong>
                         <br>
                         <br>
                     </fieldset>
                     <br>
-                    <input type="reset" value="Limpar">
-                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar" id="box">
+                    <input type="submit" value="Enviar" id="box">
                     
                     
                 </main>
             </form>
+            <style>
+                #dados{
+                    filter: drop-shadow( 0px 1px 0px black);
+                }
+                #contato{
+                    filter: drop-shadow(0 0 1px black);
+                }
+                #box{
+                    box-shadow: 1px 1px 10px black;
+                    border: 3px solid rgb(85, 84, 84)
+                }
             
+            </style>
                 
         </body>
         </html>
