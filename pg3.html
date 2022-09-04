@@ -11,63 +11,95 @@
             padding: 0%;
         }
         body{
-            background-color: black;
+            background-color:black;
+            background-image:linear-gradient(to right,rgba(0, 0, 0, 0.651),rgba(51, 51, 51, 0.726));
+            ;
         }
         main{
             text-align:left;
             background-color: rgba(255, 255, 255, 0);
             max-width: 1650px;
-            height: 570px;
+            height: 780px;
            margin:auto;
         }
         div#principal{
-            background-color: rgba(236, 236, 236, 0.534);
-            background-image:linear-gradient(to right,rgba(179, 173, 173, 0.651),rgba(15, 15, 15, 0.247));
-            height: 570px;
-            border: 2px solid rgb(94, 94, 94);
-            
-            
+            border: 5px solid gray;
+            background-color: gray;
+            height: 660px;
+            border-radius: 10px;
+            padding: 5px;
+            background-image:linear-gradient(to right,rgba(0, 0, 0, 0.295),rgba(51, 51, 51, 0.815));
         }
+           
+        
         a{
-            color: blue;
             text-decoration: none;
+            color:rgba(255, 255, 255, 0.747);
+            filter: drop-shadow(0px 0px 1px black);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 10pt;
+           
+           
         }
+        
+        #dados{
+            padding-left: 4px;
+            filter: drop-shadow(0 0 1px black);
+        }
+       #nome{
+        padding-left: 25px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 10pt;
+        filter: drop-shadow(0 0 1px black);
+       }
+       #email{
+        padding-left: 45px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 10pt;
+        filter: drop-shadow(0 0 1px black);
+       }
+       #linguagens{
+        padding-left: 0px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 10pt;
+        filter: drop-shadow(0 0 1px black);
+       }
     </style>
 </head>
 <body>
 
         <main>
             <div id="principal">
-                <strong>
-                    <p><a href="index.html">Página Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas </a> <a href="pg3.html"> | Entre em contato</a></p>
-                </strong>
-                <h1 id="contato">Dados para contato:</h1>
+                
+                    <strong>
+                        <p style="text-align:center ;"><a href="index.html">Página Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas </a> <a href="pg3.html"> | Entre em contato</a></p>
+                    </strong>
+                <h1 id="dados">Dados para contato:</h1>
                 <form action="Contato" method="POST">
-                    <strong id="dados"><label for="idname">Nome Completo:</label></strong>
+                    <strong id="nome"><label for="idname">Nome Completo:</label></strong>
                     <br>
                     <input type="text" name="Nome" id="idname" placeholder="Nome Completo">
                     <br>
-                    <strong id="dados"><label for="idemail">E-mail:</label></strong>
+                    <strong id="email"><label for="idemail">E-mail:</label></strong>
                     <br>
-                    <strong><input type="text" name="e-mail" id="idemail" placeholder="Exemplo@"></strong>
+                    <input type="text" name="e-mail" id="idemail" placeholder="Exemplo@">
                     <br>
                     <br>
-                    <strong id="dados"><label for="idcurso"> Qual Disciplina que mais interessa ? </label></strong>
+                    <strong style="font-family:Georgia, 'Times New Roman', Times, serif ; font-size: 10pt; filter: drop-shadow(0 0 1px black) " ><label for="idcurso"> Qual Disciplina que mais interessa ? </label></strong>
                     <br>
                     <select name="cursos" id="idcurso">
-                        <stong>
-                            <option>Escolha uma opção</option>
-                            <option>Desenvolvimento Web </option>
-                            <option>Programação Orientada a Objetos</option>
-                            <option>Banco de Dados</option>
-                        </stong>
+                        <option>Escolha uma opção</option>
+                        <option>Desenvolvimento Web </option>
+                        <option>Programação Orientada a Objetos</option>
+                        <option>Banco de Dados</option>
                         <br>
             
                     </select>
                     <fieldset>
-                        <strong>
-                            <legend id="dados">Quais linguagens você conhece?</legend>
+                        <strong id="linguagens">
+                            <legend>Quais linguagens você conhece?</legend>
                         </strong>
+                        <br>
                         
                             <strong>
                                 <input type="checkbox" name="linguagem" id="idlingua">
@@ -88,17 +120,17 @@
                                 <input type="checkbox" name="linguagens" id="ligua6">
                                 <label for="lingua6">Ruby</label>
                             </strong>
-                    
                     </fieldset>
                     <br>
                     
                     <fieldset>
                         
-                        <strong>
-                            <legend id="dados">Onde conheceu o Cursinho Web</legend>
+                        <strong id="linguagens">
+                            <legend>Onde conheceu o Cursinho Web</legend>
                         </strong>
-                        <input type="radio" name="onde" id="radio1">
+                        <br>
                         <strong>
+                            <input type="radio" name="onde" id="radio1">
                             <label for="onde">Amigos</label>
                             <br>
                             <input type="radio" name="onde" id="radio2">
@@ -116,23 +148,21 @@
                     <br>
                     <input type="reset" value="Limpar" id="box">
                     <input type="submit" value="Enviar" id="box">
+                    <style>
+                        #box{
+                            border: 3px solid rgba(0, 0, 0, 0.541);
+                            border-radius: 5px;
+                           filter: drop-shadow(0 0 5px black);
+                        }
+                        
+                        
+                        
+                    </style>
                     
                     
                 </main>
             </form>
-            <style>
-                #dados{
-                    filter: drop-shadow( 0px 1px 0px black);
-                }
-                #contato{
-                    filter: drop-shadow(0 0 1px black);
-                }
-                #box{
-                    box-shadow: 1px 1px 10px black;
-                    border: 3px solid rgb(85, 84, 84)
-                }
             
-            </style>
                 
         </body>
         </html>
