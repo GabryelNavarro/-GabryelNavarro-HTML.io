@@ -15,7 +15,7 @@
         }
         main{
             text-align: center;
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.404);
             max-width: 1000px;
             margin: auto;
         }
@@ -23,11 +23,17 @@
             background-color: rgba(236, 236, 236, 0.534);
             background-image:linear-gradient(to right,rgba(0, 0, 0, 0.651),rgba(15, 15, 15, 0.247));
             border: 6px solid gray;
+            border-radius: 12px;
         }
         a{
             text-decoration: none;
-            color: blue;
+            color:rgba(255, 255, 255, 0.747);
+            filter: drop-shadow(0px 0px 1px black);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 10pt;
+
         }
+        
     </style>
 </head>
 <body>
@@ -36,33 +42,41 @@
             <strong>
                 <p><a href="index.html">Página Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas </a><a href="pg3.html"> | Entre em contato</a></p>
             </strong>
-            <h1 id="inicio">Disciplinas Oferecidas:</h1>
-            <h2 id="inicio">Desenvolvimento Web</h2>
-            <p>Conhecer os conceitos de Desenvolvimento de sistemas dinâmicos para a internet,aplicado as mais recentes tecnologias e métodos para está área.</p>
-            <h3 id="inicio">Habalidades</h3>
+            <h1 id="habilidades">Disciplinas Oferecidas</h1>
+            <h2 id="habilidades">Desenvolvimento Web</h2>
+            <strong>
+                <p>Conhecer os conceitos de Desenvolvimento de sistemas dinâmicos para a internet;<p>aplicado as mais recentes tecnologias e métodos para está área.</p></p>
+            </strong>
+            <h3 id="habilidades">Habalidades</h3>
             <ul>
-                <li id="dic">*HTML</li>
-                <li id="dic">*CSS</li>
-                <li id="dic">*JavaScript</li>
-                <li id="dic">*Python & Flask</li>
+                <strong>
+                    <li>*HTML</li>
+                    <li>*CSS</li>
+                    <li>*JavaScript</li>
+                    <li>*Python & Flask</li>
+                </strong>
                 <div id="img1">
                     <p><img src="web-removebg-preview (1).png" alt="" id="img1"></p>
                 </div>
             </ul>
-            <h2 id="inicio">Programação Orientada a Objetos</h2>
-            <p>Desenvolver Lógica de raciocinio para organizar os elementos necessários para desenvolvimento de programas orientado a objetos.</p>
-            <h3 id="inicio"> Habalidades</h3>
+            <h2 id="habilidades">Programação Orientada a Objetos</h2>
+            <strong>
+                <p>Desenvolver Lógica de raciocinio para organizar os elementos necessários para desenvolvimento de programas orientado a objetos.</p>
+            </strong>
+            <h3 id="habilidades"> Habalidades</h3>
             <ul>
-                <li id="dic">*Dicionários</li>
-                <li id="dic">*Tratamento de exeções</li>
-                <li id="dic">*Testes unitários</li>
-                <li id="dic">*Construção de classes,atributos e métodos</li>
-                <li id="dic">*Herança e polimorfismo</li>
+                <strong>
+                    <li>*Dicionários</li>
+                    <li>*Tratamento de exeções</li>
+                    <li>*Testes unitários</li>
+                    <li>*Construção de classes,atributos e métodos</li>
+                    <li>*Herança e polimorfismo</li>
+                </strong>
                 <img src="python-removebg-preview (1).png" alt="" id="img2">
             </ul>
-            <strong id="pg2f">Cursinho web - Todos os direitos reservados</strong>
+            <strong id="curso">Cursinho web - Todos os direitos reservados</strong>
             <br>
-            <strong id="pg2f">Contato:</strong> <a href="email@provedor.com"><strong>email@provedor.com</strong></a>
+            <strong id="contato">Contato: <a href="email@provedor.com">email@provedor.com</a></strong>
         </div>
     </main>
     <style>
@@ -74,15 +88,16 @@
             filter: drop-shadow(2px 2px 5px rgb(36, 36, 36));
             
         }
-        #pg2f{
-            filter: drop-shadow(1px 1px 2px black);
+        #contato{
+            filter: drop-shadow(1px 1px 1px black );
         }
-        #inicio{
+        #curso{
             filter: drop-shadow(1px 1px 1px black);
         }
-        #dic{
-            filter: drop-shadow(1px 0px 0px black);
+        #habilidades{
+            filter: drop-shadow(1px 5px 5px black);
         }
+
     </style>
 </body>
 </html>
