@@ -12,27 +12,41 @@
         }
         body{
             background-image: linear-gradient(to right, rgb(5, 5, 5), rgba(8, 8, 8, 0.918));
+         
+
         }
         main{
             text-align: center;
-            background-color: antiquewhite;
+            background-color: rgb(0, 0, 0);
             max-width: 1000px;
             margin: auto;
+            border-radius: 12px;
+           
+           
+
+          
         }
         div#principal{
             background-color: rgba(105, 105, 105, 0.767);
             color: rgb(0, 0, 0);
-            border: 5px solid gray;
-            background-image:linear-gradient(to right,rgba(49, 49, 49, 0.651),rgba(80, 77, 77, 0.247))
+            border:  5px solid gray;
+            border-radius: 12px;
+          
+            
+            background-image:linear-gradient(to right,rgba(49, 49, 49, 0.651),rgba(80, 77, 77, 0.247));
+            
+            
             
         }
         a{
             text-decoration: none;
-            color: blue;
-            
-
+            color:rgba(255, 255, 255, 0.747);
+            filter: drop-shadow(0px 0px 1px black);
+            font-size: 10pt;
+            font-family: Georgia, 'Times New Roman', Times, serif
             
         }
+        
     </style>
 </head>
 <body>
@@ -42,27 +56,34 @@
             <p><a href="index.html">Pagina Inicial</a><a href="pg2.html"> | Disciplinas Oferecidas</a><a href="pg3.html"> | Entre em contato</a></p>
         </strong>
         <h1 id="inicio"> Bem - Vindo ao Cursinho Web!</h1>
-        <p> Nossa empresa oferece cursos de aprofundamento em Programação.</p>
-        <img src="empresa.jpg" alt="" id="img1">
-        <strong id="fimpg1">Cursinho web - Todos os direitos reservados</strong>
-        <br>
-        <strong id="fimpg1">Contato:</strong> <a href="email@provedor.com"><strong>email@provedor.com</strong></a>
         
+            <strong>
+                <p> Nossa empresa oferece cursos de aprofundamento em Programação.</p>
+            </strong>
+        
+        <img src="empresa.jpg" alt="" id="img1">
+        <strong>
+            <p1 id="cursoweb"> Cursinho Web - Todos os direitos reservados
+        </strong>
+            <br>
+            <strong id="cursoweb">Contato : <a href="email@provedor.com">email@provedor.com</a></strong>
+        </p>
     </div>
 </main>
 <style>
     #img1{
-        border: 3px solid gray;
+        border: 5px solid gray;
         width: 950px;
         filter: drop-shadow(0px 0px 5px black);
+        border-radius: 10px;
     }
     #inicio{
-        filter: drop-shadow(2px 0 1px black);
+        filter: drop-shadow(0 0 1px black);
+
     }
-   #fimpg1{
-    filter: drop-shadow(0px 0px 2px black);
-   }
-    
+    #cursoweb{
+        filter: drop-shadow(0 0 1px black);
+    }
 </style>
 </body>
 </html>
